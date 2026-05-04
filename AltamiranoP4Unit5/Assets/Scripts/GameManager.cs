@@ -1,15 +1,13 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class Target : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-
-    private Rigidbody targetRb;
-
+    public List<GameObject> target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        targetRb = GetComponent<Rigidbody>();
-        targetRb.AddForce(Vector3.up * Random.Range(12, 16), ForceMode.Impulse);
+        
     }
 
     // Update is called once per frame
